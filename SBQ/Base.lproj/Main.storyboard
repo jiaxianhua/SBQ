@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="yl2-sM-qoP">
+            <objects>
+                <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
+                        <rect key="frame" x="0.0" y="975" width="768" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="TiA-1P-CU0" kind="relationship" relationship="viewControllers" id="SIO-6W-SKj"/>
+                        <segue destination="VvZ-oz-6SK" kind="relationship" relationship="viewControllers" id="lg7-5U-0FR"/>
+                        <segue destination="Xc2-Rg-AsV" kind="relationship" relationship="viewControllers" id="wmN-6Y-EgU"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-30" y="564"/>
+        </scene>
+        <!--三-->
+        <scene sceneID="tP4-bv-5pd">
+            <objects>
+                <tableViewController id="TiA-1P-CU0" customClass="STableViewController" customModule="SBQ" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="JHu-jx-Ej7">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <color key="sectionIndexBackgroundColor" red="1" green="0.90036319529999997" blue="0.63249245890000005" alpha="1" colorSpace="calibratedRGB"/>
+                        <connections>
+                            <outlet property="dataSource" destination="TiA-1P-CU0" id="1Zk-77-NiD"/>
+                            <outlet property="delegate" destination="TiA-1P-CU0" id="5HE-NN-1u2"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="三" id="rPu-eb-dSd"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3IW-0n-xQr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="665" y="-130"/>
+        </scene>
+        <!--百-->
+        <scene sceneID="qy2-qg-2iS">
+            <objects>
+                <tableViewController id="VvZ-oz-6SK" customClass="BViewController" customModule="SBQ" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="EGC-G4-Vnm">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <connections>
+                            <outlet property="dataSource" destination="VvZ-oz-6SK" id="RUF-rA-DZb"/>
+                            <outlet property="delegate" destination="VvZ-oz-6SK" id="qoK-WU-wBG"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="百" id="Q7l-1m-Kct"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LzE-E9-L8d" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="665" y="564"/>
+        </scene>
+        <!--千-->
+        <scene sceneID="xwk-Vx-eBa">
+            <objects>
+                <tableViewController id="Xc2-Rg-AsV" customClass="QViewController" customModule="SBQ" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="8yG-D5-Jal">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="0.90036319529999997" blue="0.63249245890000005" alpha="1" colorSpace="calibratedRGB"/>
+                        <connections>
+                            <outlet property="dataSource" destination="Xc2-Rg-AsV" id="UcR-6x-sur"/>
+                            <outlet property="delegate" destination="Xc2-Rg-AsV" id="YCd-fy-G1J"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="千" id="FzQ-Js-cdj"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1nu-k3-XbP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="665" y="1288"/>
+        </scene>
+    </scenes>
+</document>
