@@ -16,6 +16,8 @@
 		3581D07D1AB71586005BBD56 /* STableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3581D07C1AB71586005BBD56 /* STableViewController.swift */; };
 		3581D07F1AB71592005BBD56 /* BViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3581D07E1AB71592005BBD56 /* BViewController.swift */; };
 		3581D0811AB7159B005BBD56 /* QViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3581D0801AB7159B005BBD56 /* QViewController.swift */; };
+		6CA561D21BD0AAD800F88517 /* iVersion.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6CA561CF1BD0AAD800F88517 /* iVersion.bundle */; settings = {ASSET_TAGS = (); }; };
+		6CA561D31BD0AAD800F88517 /* iVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CA561D11BD0AAD800F88517 /* iVersion.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +44,9 @@
 		3581D07C1AB71586005BBD56 /* STableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STableViewController.swift; sourceTree = "<group>"; };
 		3581D07E1AB71592005BBD56 /* BViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BViewController.swift; sourceTree = "<group>"; };
 		3581D0801AB7159B005BBD56 /* QViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QViewController.swift; sourceTree = "<group>"; };
+		6CA561CF1BD0AAD800F88517 /* iVersion.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = iVersion.bundle; sourceTree = "<group>"; };
+		6CA561D01BD0AAD800F88517 /* iVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iVersion.h; sourceTree = "<group>"; };
+		6CA561D11BD0AAD800F88517 /* iVersion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iVersion.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +70,7 @@
 		3581D04A1AB71391005BBD56 = {
 			isa = PBXGroup;
 			children = (
+				6CA561CE1BD0AAD800F88517 /* iVersion */,
 				3581D0551AB71391005BBD56 /* SBQ */,
 				3581D06D1AB71392005BBD56 /* SBQTests */,
 				3581D0541AB71391005BBD56 /* Products */,
@@ -121,6 +127,16 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		6CA561CE1BD0AAD800F88517 /* iVersion */ = {
+			isa = PBXGroup;
+			children = (
+				6CA561CF1BD0AAD800F88517 /* iVersion.bundle */,
+				6CA561D01BD0AAD800F88517 /* iVersion.h */,
+				6CA561D11BD0AAD800F88517 /* iVersion.m */,
+			);
+			path = iVersion;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -165,7 +181,8 @@
 		3581D04B1AB71391005BBD56 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0620;
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = jiaxianhua;
 				TargetAttributes = {
 					3581D0521AB71391005BBD56 = {
@@ -204,6 +221,7 @@
 			files = (
 				3581D0601AB71392005BBD56 /* Main.storyboard in Resources */,
 				3581D0651AB71392005BBD56 /* LaunchScreen.xib in Resources */,
+				6CA561D21BD0AAD800F88517 /* iVersion.bundle in Resources */,
 				3581D0621AB71392005BBD56 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -226,6 +244,7 @@
 				3581D07F1AB71592005BBD56 /* BViewController.swift in Sources */,
 				3581D07D1AB71586005BBD56 /* STableViewController.swift in Sources */,
 				3581D0811AB7159B005BBD56 /* QViewController.swift in Sources */,
+				6CA561D31BD0AAD800F88517 /* iVersion.m in Sources */,
 				3581D07B1AB71451005BBD56 /* TableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -288,6 +307,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -357,6 +377,7 @@
 				INFOPLIST_FILE = SBQ/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jiaxianhua.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -372,6 +393,7 @@
 				INFOPLIST_FILE = SBQ/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jiaxianhua.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -391,6 +413,7 @@
 				);
 				INFOPLIST_FILE = SBQTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jiaxianhua.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SBQ.app/SBQ";
 			};
@@ -406,6 +429,7 @@
 				);
 				INFOPLIST_FILE = SBQTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jiaxianhua.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SBQ.app/SBQ";
 			};
