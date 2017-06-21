@@ -8,12 +8,11 @@
 
 import UIKit
 
-class QViewController: TableViewController {
+class QViewController: CollectionViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
         context = [
             "天地玄黄","宇宙洪荒","日月盈昃","辰宿列张",
             "寒来暑往","秋收冬藏","闰余成岁","律吕调阳",
@@ -81,20 +80,5 @@ class QViewController: TableViewController {
 
         ]
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

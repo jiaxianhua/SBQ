@@ -1,8 +1,12 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Tab Bar Controller-->
@@ -13,79 +17,106 @@
                     <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
                         <rect key="frame" x="0.0" y="975" width="768" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                        <animations/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
-                        <segue destination="TiA-1P-CU0" kind="relationship" relationship="viewControllers" id="SIO-6W-SKj"/>
-                        <segue destination="VvZ-oz-6SK" kind="relationship" relationship="viewControllers" id="lg7-5U-0FR"/>
-                        <segue destination="Xc2-Rg-AsV" kind="relationship" relationship="viewControllers" id="wmN-6Y-EgU"/>
+                        <segue destination="4Jb-xs-F59" kind="relationship" relationship="viewControllers" id="DGY-Ak-c61"/>
+                        <segue destination="7Ri-9H-Hgy" kind="relationship" relationship="viewControllers" id="qXZ-Gx-tje"/>
+                        <segue destination="Ze4-C5-jlQ" kind="relationship" relationship="viewControllers" id="QGr-Oi-gk4"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-30" y="564"/>
+            <point key="canvasLocation" x="-42" y="439"/>
         </scene>
-        <!--三-->
-        <scene sceneID="tP4-bv-5pd">
+        <!--View Controller-->
+        <scene sceneID="6aZ-oV-vFu">
             <objects>
-                <tableViewController id="TiA-1P-CU0" customClass="STableViewController" customModule="SBQ" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="JHu-jx-Ej7">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                <collectionViewController id="Ze4-C5-jlQ" customClass="QViewController" customModule="SBQ" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" id="8He-2m-uUz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <animations/>
-                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                        <color key="sectionIndexBackgroundColor" red="1" green="0.90036319529999997" blue="0.63249245890000005" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="rTD-U9-rpD">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells/>
                         <connections>
-                            <outlet property="dataSource" destination="TiA-1P-CU0" id="1Zk-77-NiD"/>
-                            <outlet property="delegate" destination="TiA-1P-CU0" id="5HE-NN-1u2"/>
+                            <outlet property="dataSource" destination="Ze4-C5-jlQ" id="FQl-6N-32R"/>
+                            <outlet property="delegate" destination="Ze4-C5-jlQ" id="fS0-Xd-Qss"/>
                         </connections>
-                    </tableView>
-                    <tabBarItem key="tabBarItem" title="三" id="rPu-eb-dSd"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="3IW-0n-xQr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                    </collectionView>
+                    <tabBarItem key="tabBarItem" title="" image="Q" id="WbB-vi-78l">
+                        <inset key="imageInsets" minX="0.0" minY="10" maxX="0.0" maxY="-10"/>
+                    </tabBarItem>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SFn-U4-cP2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="665" y="-130"/>
+            <point key="canvasLocation" x="716" y="1200"/>
         </scene>
-        <!--百-->
-        <scene sceneID="qy2-qg-2iS">
+        <!--View Controller-->
+        <scene sceneID="fHi-NW-CpJ">
             <objects>
-                <tableViewController id="VvZ-oz-6SK" customClass="BViewController" customModule="SBQ" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="EGC-G4-Vnm">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                <collectionViewController id="4Jb-xs-F59" customClass="SViewController" customModule="SBQ" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" id="0dy-OI-x4d">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <animations/>
-                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="3e7-12-euX">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells/>
                         <connections>
-                            <outlet property="dataSource" destination="VvZ-oz-6SK" id="RUF-rA-DZb"/>
-                            <outlet property="delegate" destination="VvZ-oz-6SK" id="qoK-WU-wBG"/>
+                            <outlet property="dataSource" destination="4Jb-xs-F59" id="uPn-PE-ll0"/>
+                            <outlet property="delegate" destination="4Jb-xs-F59" id="fvJ-tt-O9g"/>
                         </connections>
-                    </tableView>
-                    <tabBarItem key="tabBarItem" title="百" id="Q7l-1m-Kct"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="LzE-E9-L8d" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                    </collectionView>
+                    <tabBarItem key="tabBarItem" title="" image="S" id="wP1-Mo-CTH">
+                        <inset key="imageInsets" minX="0.0" minY="10" maxX="0.0" maxY="-10"/>
+                    </tabBarItem>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XgS-Et-Xti" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="665" y="564"/>
+            <point key="canvasLocation" x="-822" y="1200"/>
         </scene>
-        <!--千-->
-        <scene sceneID="xwk-Vx-eBa">
+        <!--View Controller-->
+        <scene sceneID="ZBL-Hr-0ef">
             <objects>
-                <tableViewController id="Xc2-Rg-AsV" customClass="QViewController" customModule="SBQ" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="8yG-D5-Jal">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                <collectionViewController id="7Ri-9H-Hgy" customClass="BViewController" customModule="SBQ" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" id="9lU-KY-2MT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <animations/>
-                        <color key="backgroundColor" red="1" green="0.90036319529999997" blue="0.63249245890000005" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="6KN-eO-iNm">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells/>
                         <connections>
-                            <outlet property="dataSource" destination="Xc2-Rg-AsV" id="UcR-6x-sur"/>
-                            <outlet property="delegate" destination="Xc2-Rg-AsV" id="YCd-fy-G1J"/>
+                            <outlet property="dataSource" destination="7Ri-9H-Hgy" id="eq6-UG-FOw"/>
+                            <outlet property="delegate" destination="7Ri-9H-Hgy" id="uqj-I4-nlg"/>
                         </connections>
-                    </tableView>
-                    <tabBarItem key="tabBarItem" title="千" id="FzQ-Js-cdj"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="1nu-k3-XbP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                    </collectionView>
+                    <tabBarItem key="tabBarItem" title="" image="B" id="tIW-05-36o">
+                        <inset key="imageInsets" minX="0.0" minY="10" maxX="0.0" maxY="-10"/>
+                    </tabBarItem>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BaI-L3-Fxk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="665" y="1288"/>
+            <point key="canvasLocation" x="-41" y="1200"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="B" width="25" height="22"/>
+        <image name="Q" width="22" height="27"/>
+        <image name="S" width="17" height="15"/>
+    </resources>
 </document>

@@ -10,14 +10,14 @@
 		3581D0591AB71391005BBD56 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3581D0581AB71391005BBD56 /* AppDelegate.swift */; };
 		3581D0601AB71392005BBD56 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3581D05E1AB71392005BBD56 /* Main.storyboard */; };
 		3581D0621AB71392005BBD56 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3581D0611AB71392005BBD56 /* Images.xcassets */; };
-		3581D0651AB71392005BBD56 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3581D0631AB71392005BBD56 /* LaunchScreen.xib */; };
 		3581D0711AB71392005BBD56 /* SBQTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3581D0701AB71392005BBD56 /* SBQTests.swift */; };
-		3581D07B1AB71451005BBD56 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3581D07A1AB71451005BBD56 /* TableViewController.swift */; };
-		3581D07D1AB71586005BBD56 /* STableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3581D07C1AB71586005BBD56 /* STableViewController.swift */; };
-		3581D07F1AB71592005BBD56 /* BViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3581D07E1AB71592005BBD56 /* BViewController.swift */; };
-		3581D0811AB7159B005BBD56 /* QViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3581D0801AB7159B005BBD56 /* QViewController.swift */; };
-		6CA561D21BD0AAD800F88517 /* iVersion.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6CA561CF1BD0AAD800F88517 /* iVersion.bundle */; settings = {ASSET_TAGS = (); }; };
-		6CA561D31BD0AAD800F88517 /* iVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CA561D11BD0AAD800F88517 /* iVersion.m */; settings = {ASSET_TAGS = (); }; };
+		DE03B7C81EFA544C00B8EF3D /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE03B7C71EFA544C00B8EF3D /* Launch Screen.storyboard */; };
+		DE03B7CD1EFA55E900B8EF3D /* BViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE03B7C91EFA55E900B8EF3D /* BViewController.swift */; };
+		DE03B7CE1EFA55E900B8EF3D /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE03B7CA1EFA55E900B8EF3D /* CollectionViewController.swift */; };
+		DE03B7CF1EFA55E900B8EF3D /* QViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE03B7CB1EFA55E900B8EF3D /* QViewController.swift */; };
+		DE03B7D01EFA55E900B8EF3D /* SViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE03B7CC1EFA55E900B8EF3D /* SViewController.swift */; };
+		DE03B7D41EFA567E00B8EF3D /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE03B7D21EFA567E00B8EF3D /* CollectionViewCell.swift */; };
+		DE03B7D51EFA567E00B8EF3D /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE03B7D31EFA567E00B8EF3D /* CollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,17 +36,16 @@
 		3581D0581AB71391005BBD56 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3581D05F1AB71392005BBD56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3581D0611AB71392005BBD56 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		3581D0641AB71392005BBD56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		3581D06A1AB71392005BBD56 /* SBQTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SBQTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3581D06F1AB71392005BBD56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3581D0701AB71392005BBD56 /* SBQTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SBQTests.swift; sourceTree = "<group>"; };
-		3581D07A1AB71451005BBD56 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
-		3581D07C1AB71586005BBD56 /* STableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STableViewController.swift; sourceTree = "<group>"; };
-		3581D07E1AB71592005BBD56 /* BViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BViewController.swift; sourceTree = "<group>"; };
-		3581D0801AB7159B005BBD56 /* QViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QViewController.swift; sourceTree = "<group>"; };
-		6CA561CF1BD0AAD800F88517 /* iVersion.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = iVersion.bundle; sourceTree = "<group>"; };
-		6CA561D01BD0AAD800F88517 /* iVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iVersion.h; sourceTree = "<group>"; };
-		6CA561D11BD0AAD800F88517 /* iVersion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iVersion.m; sourceTree = "<group>"; };
+		DE03B7C71EFA544C00B8EF3D /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		DE03B7C91EFA55E900B8EF3D /* BViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BViewController.swift; sourceTree = "<group>"; };
+		DE03B7CA1EFA55E900B8EF3D /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		DE03B7CB1EFA55E900B8EF3D /* QViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QViewController.swift; sourceTree = "<group>"; };
+		DE03B7CC1EFA55E900B8EF3D /* SViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SViewController.swift; sourceTree = "<group>"; };
+		DE03B7D21EFA567E00B8EF3D /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		DE03B7D31EFA567E00B8EF3D /* CollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,7 +69,6 @@
 		3581D04A1AB71391005BBD56 = {
 			isa = PBXGroup;
 			children = (
-				6CA561CE1BD0AAD800F88517 /* iVersion */,
 				3581D0551AB71391005BBD56 /* SBQ */,
 				3581D06D1AB71392005BBD56 /* SBQTests */,
 				3581D0541AB71391005BBD56 /* Products */,
@@ -89,15 +87,16 @@
 		3581D0551AB71391005BBD56 /* SBQ */ = {
 			isa = PBXGroup;
 			children = (
+				DE03B7D11EFA566E00B8EF3D /* View */,
+				DE03B7C91EFA55E900B8EF3D /* BViewController.swift */,
+				DE03B7CA1EFA55E900B8EF3D /* CollectionViewController.swift */,
+				DE03B7CB1EFA55E900B8EF3D /* QViewController.swift */,
+				DE03B7CC1EFA55E900B8EF3D /* SViewController.swift */,
 				3581D0581AB71391005BBD56 /* AppDelegate.swift */,
-				3581D07A1AB71451005BBD56 /* TableViewController.swift */,
-				3581D07E1AB71592005BBD56 /* BViewController.swift */,
-				3581D0801AB7159B005BBD56 /* QViewController.swift */,
-				3581D07C1AB71586005BBD56 /* STableViewController.swift */,
 				3581D05E1AB71392005BBD56 /* Main.storyboard */,
 				3581D0611AB71392005BBD56 /* Images.xcassets */,
-				3581D0631AB71392005BBD56 /* LaunchScreen.xib */,
 				3581D0561AB71391005BBD56 /* Supporting Files */,
+				DE03B7C71EFA544C00B8EF3D /* Launch Screen.storyboard */,
 			);
 			path = SBQ;
 			sourceTree = "<group>";
@@ -127,14 +126,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		6CA561CE1BD0AAD800F88517 /* iVersion */ = {
+		DE03B7D11EFA566E00B8EF3D /* View */ = {
 			isa = PBXGroup;
 			children = (
-				6CA561CF1BD0AAD800F88517 /* iVersion.bundle */,
-				6CA561D01BD0AAD800F88517 /* iVersion.h */,
-				6CA561D11BD0AAD800F88517 /* iVersion.m */,
+				DE03B7D21EFA567E00B8EF3D /* CollectionViewCell.swift */,
+				DE03B7D31EFA567E00B8EF3D /* CollectionViewCell.xib */,
 			);
-			path = iVersion;
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -188,9 +186,11 @@
 					3581D0521AB71391005BBD56 = {
 						CreatedOnToolsVersion = 6.2;
 						DevelopmentTeam = U42NM79F4W;
+						LastSwiftMigration = 0830;
 					};
 					3581D0691AB71392005BBD56 = {
 						CreatedOnToolsVersion = 6.2;
+						LastSwiftMigration = 0830;
 						TestTargetID = 3581D0521AB71391005BBD56;
 					};
 				};
@@ -219,9 +219,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE03B7C81EFA544C00B8EF3D /* Launch Screen.storyboard in Resources */,
 				3581D0601AB71392005BBD56 /* Main.storyboard in Resources */,
-				3581D0651AB71392005BBD56 /* LaunchScreen.xib in Resources */,
-				6CA561D21BD0AAD800F88517 /* iVersion.bundle in Resources */,
+				DE03B7D51EFA567E00B8EF3D /* CollectionViewCell.xib in Resources */,
 				3581D0621AB71392005BBD56 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -240,12 +240,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE03B7CF1EFA55E900B8EF3D /* QViewController.swift in Sources */,
+				DE03B7D01EFA55E900B8EF3D /* SViewController.swift in Sources */,
+				DE03B7D41EFA567E00B8EF3D /* CollectionViewCell.swift in Sources */,
+				DE03B7CE1EFA55E900B8EF3D /* CollectionViewController.swift in Sources */,
 				3581D0591AB71391005BBD56 /* AppDelegate.swift in Sources */,
-				3581D07F1AB71592005BBD56 /* BViewController.swift in Sources */,
-				3581D07D1AB71586005BBD56 /* STableViewController.swift in Sources */,
-				3581D0811AB7159B005BBD56 /* QViewController.swift in Sources */,
-				6CA561D31BD0AAD800F88517 /* iVersion.m in Sources */,
-				3581D07B1AB71451005BBD56 /* TableViewController.swift in Sources */,
+				DE03B7CD1EFA55E900B8EF3D /* BViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,14 +274,6 @@
 				3581D05F1AB71392005BBD56 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		3581D0631AB71392005BBD56 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3581D0641AB71392005BBD56 /* Base */,
-			);
-			name = LaunchScreen.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -371,16 +363,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = SBQ/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jiaxianhua.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -388,16 +380,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = SBQ/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jiaxianhua.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -417,6 +409,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jiaxianhua.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SBQ.app/SBQ";
 			};
 			name = Debug;
@@ -433,6 +426,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jiaxianhua.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SBQ.app/SBQ";
 			};
 			name = Release;

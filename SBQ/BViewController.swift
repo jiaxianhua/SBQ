@@ -8,12 +8,11 @@
 
 import UIKit
 
-class BViewController: TableViewController {
+class BViewController: CollectionViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
         context = [
             "赵钱孙李","周吴郑王","冯陈褚卫","蒋沈韩杨","朱秦尤许","何吕施张","孔曹严华","金魏陶姜",
             "戚谢邹喻","柏水窦章","云苏潘葛","奚范彭郎","鲁韦昌马","苗凤花方","俞任袁柳","酆鲍史唐",
@@ -35,20 +34,5 @@ class BViewController: TableViewController {
             "商牟佘佴","伯赏南宫","墨哈谯笪","年爱阳佟","第五言福","百家姓续",
         ]
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
