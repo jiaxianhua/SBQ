@@ -14,9 +14,12 @@ class CollectionViewController: UICollectionViewController {
     var charCount = 4
     var cellWidth: CGFloat = 0.0
     
+    
+    let decorationViewKind = "decorationViewKind"
+
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Register cell classes
         let nib = UINib(nibName: CollectionViewCell.reuseIdentifier, bundle: nil)
         self.collectionView?.register(nib, forCellWithReuseIdentifier: CollectionViewCell.reuseIdentifier)
@@ -26,7 +29,7 @@ class CollectionViewController: UICollectionViewController {
             layout.minimumInteritemSpacing = 0
         }
         
-        self.collectionView?.contentInset = UIEdgeInsets(top: 20, left: 0, bottom: 0, right: 0)
+        self.collectionView?.backgroundColor = UIColor(patternImage: UIImage(named: "Book")!)
     }
     
     override func viewDidAppear(_ animated: Bool) {

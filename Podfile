@@ -12,7 +12,7 @@ target 'SBQ' do
   pod 'MBProgressHUD'
   pod 'Mantle', '1.5.5'
   pod 'AFNetworking', '~> 2.0'
-
+  pod 'NAKPlaybackIndicatorView'
 
   target 'SBQTests' do
     inherit! :search_paths
