@@ -27,6 +27,7 @@ PODS:
   - Mantle/extobjc (1.5.5)
   - MBProgressHUD (1.0.0)
   - NAKPlaybackIndicatorView (0.0.3)
+  - PMParentalGate (1.0)
   - SDWebImage (4.0.0):
     - SDWebImage/Core (= 4.0.0)
   - SDWebImage/Core (4.0.0)
@@ -38,6 +39,7 @@ DEPENDENCIES:
   - Mantle (= 1.5.5)
   - MBProgressHUD
   - NAKPlaybackIndicatorView
+  - PMParentalGate
   - SDWebImage
 
 SPEC CHECKSUMS:
@@ -47,8 +49,9 @@ SPEC CHECKSUMS:
   Mantle: 1b29072a707453975b200a173cf77ec1e2810b75
   MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
   NAKPlaybackIndicatorView: 794dd97576fe074bb1844c19ebcbf7509384a47f
+  PMParentalGate: 9cf253ba14edcd9ff283677b70b1be9e56d7acef
   SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
 
-PODFILE CHECKSUM: f1d563a0f0e77784d9683f91e1f9928a894367cd
+PODFILE CHECKSUM: dbd5b3b703731079e3b8713cd7e560d68d45cf26
 
 COCOAPODS: 1.2.1

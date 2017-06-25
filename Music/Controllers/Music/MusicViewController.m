@@ -21,6 +21,7 @@
 #import "UIConstant.h"
 #import "UIImageView+WebCache.h"
 #import "BaseHelper.h"
+#import "PMParentalGateQuestion.h"
 
 static void *kStatusKVOKey = &kStatusKVOKey;
 static void *kDurationKVOKey = &kDurationKVOKey;
@@ -275,8 +276,12 @@ static void *kBufferingRatioKVOKey = &kBufferingRatioKVOKey;
 }
 
 - (IBAction)didTouchMoreButton:(id)sender {
-    [self.webView setHidden:!self.webView.isHidden];
-    [self changeIndex];
+    [[PMParentalGateQuestion sharedGate] presentGateWithText:nil timeout:10 finishedBlock:^(BOOL allowPass, GateResult result) {
+        if (allowPass) {
+            [self.webView setHidden:!self.webView.isHidden];
+            [self changeIndex];
+        }
+    }];
 }
 
 - (void)changeIndex {

@@ -13,6 +13,7 @@ target 'SBQ' do
   pod 'Mantle', '1.5.5'
   pod 'AFNetworking', '~> 2.0'
   pod 'NAKPlaybackIndicatorView'
+  pod 'PMParentalGate'
 
   target 'SBQTests' do
     inherit! :search_paths

@@ -1,0 +1,6 @@
+framework module PMParentalGate {
+  umbrella header "PMParentalGate-umbrella.h"
+
+  export *
+  module * { export * }
+}
