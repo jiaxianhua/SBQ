@@ -402,6 +402,7 @@
 				3581D0511AB71391005BBD56 /* Resources */,
 				EDCC2A54138C3D65C0DF8C0F /* [CP] Embed Pods Frameworks */,
 				C32FC92D7083DBF2E5F39504 /* [CP] Copy Pods Resources */,
+				DEBDC3011F04E8DB006C52DC /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -583,6 +584,19 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SBQ/Pods-SBQ-resources.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		DEBDC3011F04E8DB006C52DC /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#REV=`git rev-list HEAD | wc -l | awk '{print $1}'`\nREV=`date +%Y%m%d%H%M%S`\n\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion ${REV}\" \"${TARGET_BUILD_DIR}\"/${INFOPLIST_PATH}";
 		};
 		EDCC2A54138C3D65C0DF8C0F /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
