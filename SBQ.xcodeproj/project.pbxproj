@@ -39,8 +39,6 @@
 		DE03B8181EFA5DA900B8EF3D /* 百家姓.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DE03B8151EFA5DA900B8EF3D /* 百家姓.mp3 */; };
 		DE03B8191EFA5DA900B8EF3D /* 千字文.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DE03B8161EFA5DA900B8EF3D /* 千字文.mp3 */; };
 		DE03B81B1EFA633500B8EF3D /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE03B81A1EFA633500B8EF3D /* Media.xcassets */; };
-		DE03B8271EFA7C0900B8EF3D /* DecorationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE03B8251EFA7C0900B8EF3D /* DecorationView.swift */; };
-		DE03B8281EFA7C0900B8EF3D /* DecorationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE03B8261EFA7C0900B8EF3D /* DecorationView.xib */; };
 		FE013A02FA22F0D882A9447B /* Pods_SBQ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 808BA1CC3CE25603E260E94F /* Pods_SBQ.framework */; };
 /* End PBXBuildFile section */
 
@@ -109,8 +107,6 @@
 		DE03B8151EFA5DA900B8EF3D /* 百家姓.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "百家姓.mp3"; sourceTree = "<group>"; };
 		DE03B8161EFA5DA900B8EF3D /* 千字文.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "千字文.mp3"; sourceTree = "<group>"; };
 		DE03B81A1EFA633500B8EF3D /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
-		DE03B8251EFA7C0900B8EF3D /* DecorationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DecorationView.swift; sourceTree = "<group>"; };
-		DE03B8261EFA7C0900B8EF3D /* DecorationView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DecorationView.xib; sourceTree = "<group>"; };
 		FB8B32A76BCA331DA61F409A /* Pods-SBQTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SBQTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SBQTests/Pods-SBQTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -211,8 +207,6 @@
 			children = (
 				DE03B7D21EFA567E00B8EF3D /* CollectionViewCell.swift */,
 				DE03B7D31EFA567E00B8EF3D /* CollectionViewCell.xib */,
-				DE03B8251EFA7C0900B8EF3D /* DecorationView.swift */,
-				DE03B8261EFA7C0900B8EF3D /* DecorationView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -441,7 +435,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0700;
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = jiaxianhua;
 				TargetAttributes = {
 					3581D0521AB71391005BBD56 = {
@@ -495,7 +489,6 @@
 				DE03B8181EFA5DA900B8EF3D /* 百家姓.mp3 in Resources */,
 				DE03B7D51EFA567E00B8EF3D /* CollectionViewCell.xib in Resources */,
 				3581D0621AB71392005BBD56 /* Images.xcassets in Resources */,
-				DE03B8281EFA7C0900B8EF3D /* DecorationView.xib in Resources */,
 				DE03B8111EFA5D1C00B8EF3D /* MusicList.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -638,7 +631,6 @@
 				DE03B8121EFA5D1C00B8EF3D /* MusicListCell.m in Sources */,
 				3581D0591AB71391005BBD56 /* AppDelegate.swift in Sources */,
 				DE03B7F31EFA5AF700B8EF3D /* BaseHelper.m in Sources */,
-				DE03B8271EFA7C0900B8EF3D /* DecorationView.swift in Sources */,
 				DE03B7CD1EFA55E900B8EF3D /* BViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -686,8 +678,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -696,6 +690,7 @@
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -708,7 +703,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -730,8 +725,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -739,15 +736,17 @@
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -757,10 +756,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 105632A3F038125D73B3CE09 /* Pods-SBQ.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				DEVELOPMENT_TEAM = U42NM79F4W;
 				INFOPLIST_FILE = SBQ/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -775,10 +775,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BC47AD57B3E1AEFFE5272764 /* Pods-SBQ.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				DEVELOPMENT_TEAM = U42NM79F4W;
 				INFOPLIST_FILE = SBQ/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

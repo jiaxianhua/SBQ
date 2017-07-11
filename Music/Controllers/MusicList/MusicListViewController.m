@@ -27,7 +27,7 @@
     [self.navigationController setHidesBarsOnSwipe:YES];
     [self headerRefreshing];
     
-    self.view.backgroundColor = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"Book"]];
+    self.view.backgroundColor = [UIColor lightGrayColor];
 }
 
 - (IBAction)read:(UIBarButtonItem *)sender {

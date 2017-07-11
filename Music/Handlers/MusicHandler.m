@@ -50,7 +50,7 @@
         [dict setObject:@(audioDurationSeconds) forKey:MPMediaItemPropertyPlaybackDuration];
         CGFloat playerAlbumWidth = (SCREEN_WIDTH - 16) * 2;
         UIImageView *playerAlbum = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, playerAlbumWidth, playerAlbumWidth)];
-        UIImage *placeholderImage = [UIImage imageNamed:@"music_lock_screen_placeholder"];
+        UIImage *placeholderImage = [UIImage imageNamed:@"music_placeholder"];
         if (music.cover.length > 0) {
             NSURL *URL = [BaseHelper qiniuImageCenter:music.cover
                                             withWidth:[NSString stringWithFormat:@"%.f", playerAlbumWidth]

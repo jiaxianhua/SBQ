@@ -10,13 +10,11 @@ import UIKit
 
 class CollectionViewController: UICollectionViewController {
     
-    var context: [String]!
+    var characters: [String]!
+    var letters: [String]!
     var charCount = 4
     var cellWidth: CGFloat = 0.0
     
-    
-    let decorationViewKind = "decorationViewKind"
-
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -29,7 +27,7 @@ class CollectionViewController: UICollectionViewController {
             layout.minimumInteritemSpacing = 0
         }
         
-        self.collectionView?.backgroundColor = UIColor(patternImage: UIImage(named: "Book")!)
+        self.collectionView?.backgroundColor = UIColor.lightGray
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -48,7 +46,7 @@ class CollectionViewController: UICollectionViewController {
     // MARK: UICollectionViewDataSource
 
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return context.count
+        return characters.count / charCount
     }
 
 
@@ -59,14 +57,12 @@ class CollectionViewController: UICollectionViewController {
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CollectionViewCell.reuseIdentifier, for: indexPath) as! CollectionViewCell
         
-        let s = context[indexPath.section]
-        let startIndex = s.characters.index(s.startIndex, offsetBy: indexPath.row)
-        let endIndex = s.characters.index(s.startIndex, offsetBy: indexPath.row + 1);
-        let range = (startIndex ..< endIndex)
+        let character = characters[indexPath.section*charCount + indexPath.row]
+        let letter = letters[indexPath.section*charCount + indexPath.row]
         
         // Configure the cell
         if (cell.label != nil) {
-            cell.label.text = s.substring(with: range)
+            cell.label.text = letter + "\n" + character
         }
     
         return cell
