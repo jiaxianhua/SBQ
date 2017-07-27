@@ -70,7 +70,7 @@ class QViewController: CollectionViewController {
             "gōng", "diàn", "pán", "yù", "lóu", "guān", "fēi", "jīng",
             "tú", "xiě", "qín", "shòu", "huà", "cǎi", "xiān", "líng",
             "bǐng", "shè", "páng", "qǐ", "jiá", "zhàng", "duì", "yíng",
-            "sì", "yán", "shè", "xí", "gǔ", "sègrave;", "chuī", "shēng",
+            "sì", "yán", "shè", "xí", "gǔ", "sè", "chuī", "shēng",
             "shēng", "jiē", "nà", "bì", "biàn", "zhuàn", "yí", "xīng",
             "yòu", "tōng", "guǎng", "nèi", "zuǒ", "dá", "chéng", "míng",
             "jì", "jí", "fén", "diǎn", "yì", "jù", "qún", "yīng",

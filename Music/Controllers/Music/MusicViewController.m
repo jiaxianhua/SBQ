@@ -19,7 +19,6 @@
 #import "MBProgressHUD.h"
 
 #import "UIConstant.h"
-#import "UIImageView+WebCache.h"
 #import "BaseHelper.h"
 #import "PMParentalGateQuestion.h"
 
@@ -85,6 +84,7 @@ static void *kBufferingRatioKVOKey = &kBufferingRatioKVOKey;
     _randomArray = [[NSMutableArray alloc] initWithCapacity:0];
     [self addPanRecognizer];
     self.webView.delegate = self;
+    _musicMenuButton.hidden = YES;
     [self.activityIndicatorView stopAnimating];
 }
 
@@ -174,7 +174,7 @@ static void *kBufferingRatioKVOKey = &kBufferingRatioKVOKey;
 }
 
 - (void)setupRadioMusicIfNeeded {
-    _musicMenuButton.hidden = NO;
+    _musicMenuButton.hidden = YES;
     [self updateMusicCycleButton];
     [self checkCurrentIndex];
 }
@@ -194,11 +194,6 @@ static void *kBufferingRatioKVOKey = &kBufferingRatioKVOKey;
     NSString *imageWidth = [NSString stringWithFormat:@"%.f", (SCREEN_WIDTH - 70) * 2];
     _backgroudImageView.image = [UIImage imageNamed:@"music_placeholder"];
     _albumImageView.image = [UIImage imageNamed:@"music_placeholder"];
-    if (_musicEntity.cover.length > 0 ) {
-        NSURL *imageUrl = [BaseHelper qiniuImageCenter:_musicEntity.cover withWidth:imageWidth withHeight:imageWidth];
-        [_backgroudImageView sd_setImageWithURL:imageUrl placeholderImage:[UIImage imageNamed:@"music_placeholder"]];
-        [_albumImageView sd_setImageWithURL:imageUrl placeholderImage:[UIImage imageNamed:@"music_placeholder"]];
-    }
     
     if(![_visualEffectView isDescendantOfView:_backgroudView]) {
         UIVisualEffect *blurEffect;

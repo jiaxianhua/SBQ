@@ -1,25 +1,4 @@
 PODS:
-  - AFNetworking (2.6.3):
-    - AFNetworking/NSURLConnection (= 2.6.3)
-    - AFNetworking/NSURLSession (= 2.6.3)
-    - AFNetworking/Reachability (= 2.6.3)
-    - AFNetworking/Security (= 2.6.3)
-    - AFNetworking/Serialization (= 2.6.3)
-    - AFNetworking/UIKit (= 2.6.3)
-  - AFNetworking/NSURLConnection (2.6.3):
-    - AFNetworking/Reachability
-    - AFNetworking/Security
-    - AFNetworking/Serialization
-  - AFNetworking/NSURLSession (2.6.3):
-    - AFNetworking/Reachability
-    - AFNetworking/Security
-    - AFNetworking/Serialization
-  - AFNetworking/Reachability (2.6.3)
-  - AFNetworking/Security (2.6.3)
-  - AFNetworking/Serialization (2.6.3)
-  - AFNetworking/UIKit (2.6.3):
-    - AFNetworking/NSURLConnection
-    - AFNetworking/NSURLSession
   - DOUAudioStreamer (0.2.15)
   - GVUserDefaults (1.0.2)
   - Mantle (1.5.5):
@@ -28,30 +7,23 @@ PODS:
   - MBProgressHUD (1.0.0)
   - NAKPlaybackIndicatorView (0.0.3)
   - PMParentalGate (1.0)
-  - SDWebImage (4.0.0):
-    - SDWebImage/Core (= 4.0.0)
-  - SDWebImage/Core (4.0.0)
 
 DEPENDENCIES:
-  - AFNetworking (~> 2.0)
   - DOUAudioStreamer
   - GVUserDefaults
   - Mantle (= 1.5.5)
   - MBProgressHUD
   - NAKPlaybackIndicatorView
   - PMParentalGate
-  - SDWebImage
 
 SPEC CHECKSUMS:
-  AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
   DOUAudioStreamer: 14f217bab01b52171fc2bd7d96e1f8fdd50fce68
   GVUserDefaults: 52d48cf8ba578b40a1a76312b196dfc9134ba36a
   Mantle: 1b29072a707453975b200a173cf77ec1e2810b75
   MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
   NAKPlaybackIndicatorView: 794dd97576fe074bb1844c19ebcbf7509384a47f
   PMParentalGate: 9cf253ba14edcd9ff283677b70b1be9e56d7acef
-  SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
 
-PODFILE CHECKSUM: dbd5b3b703731079e3b8713cd7e560d68d45cf26
+PODFILE CHECKSUM: 8859a7a3c04a8f076c2f7633e7f1de3418a5a8ea
 
 COCOAPODS: 1.2.1

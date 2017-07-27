@@ -89,7 +89,7 @@ class SViewController: CollectionViewController {
             "wǔ", "zǐ", "zhě", "yǒu", "xún", "yáng",
             "wén", "zhōng", "zǐ", "jí", "lǎo", "zhuāng",
             "jīng", "zǐ", "tōng", "dú", "zhū", "shǐ",
-            "kǎo", "shì", "xìigrave;", "zhī", "zhōng", "shǐ",
+            "kǎo", "shì", "xì", "zhī", "zhōng", "shǐ",
             "zì", "xī", "nóng", "zhì", "huáng", "dì",
             "hào", "sān", "huáng", "jū", "shàng", "shì",
             "táng", "yǒu", "yú", "hào", "èr", "dì",

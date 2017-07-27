@@ -7,11 +7,11 @@ target 'SBQ' do
 
   # Pods for SBQ
   pod 'DOUAudioStreamer'
-  pod 'SDWebImage'
+  #pod 'SDWebImage'
   pod 'GVUserDefaults'
   pod 'MBProgressHUD'
   pod 'Mantle', '1.5.5'
-  pod 'AFNetworking', '~> 2.0'
+  #pod 'AFNetworking', '~> 2.0'
   pod 'NAKPlaybackIndicatorView'
   pod 'PMParentalGate'
 
