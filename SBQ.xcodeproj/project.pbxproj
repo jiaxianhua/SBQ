@@ -9,16 +9,9 @@
 /* Begin PBXBuildFile section */
 		13F3A031DAAE861CFDD7E3D2 /* Pods_SBQTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D260E79A187CDD5DAF968173 /* Pods_SBQTests.framework */; };
 		3581D0591AB71391005BBD56 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3581D0581AB71391005BBD56 /* AppDelegate.swift */; };
-		3581D0601AB71392005BBD56 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3581D05E1AB71392005BBD56 /* Main.storyboard */; };
 		3581D0621AB71392005BBD56 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3581D0611AB71392005BBD56 /* Images.xcassets */; };
 		3581D0711AB71392005BBD56 /* SBQTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3581D0701AB71392005BBD56 /* SBQTests.swift */; };
 		DE03B7C81EFA544C00B8EF3D /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE03B7C71EFA544C00B8EF3D /* Launch Screen.storyboard */; };
-		DE03B7CD1EFA55E900B8EF3D /* BViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE03B7C91EFA55E900B8EF3D /* BViewController.swift */; };
-		DE03B7CE1EFA55E900B8EF3D /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE03B7CA1EFA55E900B8EF3D /* CollectionViewController.swift */; };
-		DE03B7CF1EFA55E900B8EF3D /* QViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE03B7CB1EFA55E900B8EF3D /* QViewController.swift */; };
-		DE03B7D01EFA55E900B8EF3D /* SViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE03B7CC1EFA55E900B8EF3D /* SViewController.swift */; };
-		DE03B7D41EFA567E00B8EF3D /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE03B7D21EFA567E00B8EF3D /* CollectionViewCell.swift */; };
-		DE03B7D51EFA567E00B8EF3D /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE03B7D31EFA567E00B8EF3D /* CollectionViewCell.xib */; };
 		DE03B7EE1EFA5AF700B8EF3D /* NSString+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = DE03B7DA1EFA5AF700B8EF3D /* NSString+Additions.m */; };
 		DE03B7EF1EFA5AF700B8EF3D /* UIView+Animations.m in Sources */ = {isa = PBXBuildFile; fileRef = DE03B7DD1EFA5AF700B8EF3D /* UIView+Animations.m */; };
 		DE03B7F01EFA5AF700B8EF3D /* MusicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE03B7E11EFA5AF700B8EF3D /* MusicViewController.m */; };
@@ -35,10 +28,16 @@
 		DE03B80C1EFA5D1400B8EF3D /* MusicListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE03B80A1EFA5D1400B8EF3D /* MusicListViewController.m */; };
 		DE03B8111EFA5D1C00B8EF3D /* MusicList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE03B80E1EFA5D1C00B8EF3D /* MusicList.storyboard */; };
 		DE03B8121EFA5D1C00B8EF3D /* MusicListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DE03B8101EFA5D1C00B8EF3D /* MusicListCell.m */; };
-		DE03B8171EFA5DA900B8EF3D /* 三字经.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DE03B8141EFA5DA900B8EF3D /* 三字经.mp3 */; };
-		DE03B8181EFA5DA900B8EF3D /* 百家姓.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DE03B8151EFA5DA900B8EF3D /* 百家姓.mp3 */; };
-		DE03B8191EFA5DA900B8EF3D /* 千字文.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DE03B8161EFA5DA900B8EF3D /* 千字文.mp3 */; };
 		DE03B81B1EFA633500B8EF3D /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE03B81A1EFA633500B8EF3D /* Media.xcassets */; };
+		DE79538E1F2B840400877761 /* 弟子规三字经百家姓千字文.pdf in Resources */ = {isa = PBXBuildFile; fileRef = DE79538D1F2B840400877761 /* 弟子规三字经百家姓千字文.pdf */; };
+		DE7953971F2B845E00877761 /* 1.弟子规-雅坤.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DE79538F1F2B845E00877761 /* 1.弟子规-雅坤.mp3 */; };
+		DE7953981F2B845E00877761 /* 2.弟子规-雅坤.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DE7953901F2B845E00877761 /* 2.弟子规-雅坤.mp3 */; };
+		DE7953991F2B845E00877761 /* 3.弟子规-雅坤.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DE7953911F2B845E00877761 /* 3.弟子规-雅坤.mp3 */; };
+		DE79539A1F2B845E00877761 /* 4.弟子规-雅坤.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DE7953921F2B845E00877761 /* 4.弟子规-雅坤.mp3 */; };
+		DE79539B1F2B845E00877761 /* 5.弟子规-雅坤.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DE7953931F2B845E00877761 /* 5.弟子规-雅坤.mp3 */; };
+		DE79539C1F2B845E00877761 /* 6.三字经-雅坤.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DE7953941F2B845E00877761 /* 6.三字经-雅坤.mp3 */; };
+		DE79539D1F2B845E00877761 /* 7.百家姓-雅坤.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DE7953951F2B845E00877761 /* 7.百家姓-雅坤.mp3 */; };
+		DE79539E1F2B845E00877761 /* 8.千字文-雅坤.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DE7953961F2B845E00877761 /* 8.千字文-雅坤.mp3 */; };
 		FE013A02FA22F0D882A9447B /* Pods_SBQ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 808BA1CC3CE25603E260E94F /* Pods_SBQ.framework */; };
 /* End PBXBuildFile section */
 
@@ -107,6 +106,15 @@
 		DE03B8151EFA5DA900B8EF3D /* 百家姓.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "百家姓.mp3"; sourceTree = "<group>"; };
 		DE03B8161EFA5DA900B8EF3D /* 千字文.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "千字文.mp3"; sourceTree = "<group>"; };
 		DE03B81A1EFA633500B8EF3D /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		DE79538D1F2B840400877761 /* 弟子规三字经百家姓千字文.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "弟子规三字经百家姓千字文.pdf"; sourceTree = "<group>"; };
+		DE79538F1F2B845E00877761 /* 1.弟子规-雅坤.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "1.弟子规-雅坤.mp3"; sourceTree = "<group>"; };
+		DE7953901F2B845E00877761 /* 2.弟子规-雅坤.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "2.弟子规-雅坤.mp3"; sourceTree = "<group>"; };
+		DE7953911F2B845E00877761 /* 3.弟子规-雅坤.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "3.弟子规-雅坤.mp3"; sourceTree = "<group>"; };
+		DE7953921F2B845E00877761 /* 4.弟子规-雅坤.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "4.弟子规-雅坤.mp3"; sourceTree = "<group>"; };
+		DE7953931F2B845E00877761 /* 5.弟子规-雅坤.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "5.弟子规-雅坤.mp3"; sourceTree = "<group>"; };
+		DE7953941F2B845E00877761 /* 6.三字经-雅坤.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "6.三字经-雅坤.mp3"; sourceTree = "<group>"; };
+		DE7953951F2B845E00877761 /* 7.百家姓-雅坤.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "7.百家姓-雅坤.mp3"; sourceTree = "<group>"; };
+		DE7953961F2B845E00877761 /* 8.千字文-雅坤.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "8.千字文-雅坤.mp3"; sourceTree = "<group>"; };
 		FB8B32A76BCA331DA61F409A /* Pods-SBQTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SBQTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SBQTests/Pods-SBQTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -154,6 +162,7 @@
 		3581D0551AB71391005BBD56 /* SBQ */ = {
 			isa = PBXGroup;
 			children = (
+				DE79538D1F2B840400877761 /* 弟子规三字经百家姓千字文.pdf */,
 				DE03B7D11EFA566E00B8EF3D /* View */,
 				DE03B7C91EFA55E900B8EF3D /* BViewController.swift */,
 				DE03B7CA1EFA55E900B8EF3D /* CollectionViewController.swift */,
@@ -365,6 +374,14 @@
 		DE03B8131EFA5D7F00B8EF3D /* Files */ = {
 			isa = PBXGroup;
 			children = (
+				DE79538F1F2B845E00877761 /* 1.弟子规-雅坤.mp3 */,
+				DE7953901F2B845E00877761 /* 2.弟子规-雅坤.mp3 */,
+				DE7953911F2B845E00877761 /* 3.弟子规-雅坤.mp3 */,
+				DE7953921F2B845E00877761 /* 4.弟子规-雅坤.mp3 */,
+				DE7953931F2B845E00877761 /* 5.弟子规-雅坤.mp3 */,
+				DE7953941F2B845E00877761 /* 6.三字经-雅坤.mp3 */,
+				DE7953951F2B845E00877761 /* 7.百家姓-雅坤.mp3 */,
+				DE7953961F2B845E00877761 /* 8.千字文-雅坤.mp3 */,
 				DE03B8141EFA5DA900B8EF3D /* 三字经.mp3 */,
 				DE03B8151EFA5DA900B8EF3D /* 百家姓.mp3 */,
 				DE03B8161EFA5DA900B8EF3D /* 千字文.mp3 */,
@@ -479,16 +496,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE03B8171EFA5DA900B8EF3D /* 三字经.mp3 in Resources */,
+				DE79538E1F2B840400877761 /* 弟子规三字经百家姓千字文.pdf in Resources */,
 				DE03B7C81EFA544C00B8EF3D /* Launch Screen.storyboard in Resources */,
-				DE03B8191EFA5DA900B8EF3D /* 千字文.mp3 in Resources */,
+				DE79539C1F2B845E00877761 /* 6.三字经-雅坤.mp3 in Resources */,
+				DE7953981F2B845E00877761 /* 2.弟子规-雅坤.mp3 in Resources */,
+				DE79539E1F2B845E00877761 /* 8.千字文-雅坤.mp3 in Resources */,
+				DE79539D1F2B845E00877761 /* 7.百家姓-雅坤.mp3 in Resources */,
+				DE79539B1F2B845E00877761 /* 5.弟子规-雅坤.mp3 in Resources */,
 				DE03B80B1EFA5D1400B8EF3D /* music_list.json in Resources */,
 				DE03B8001EFA5B7B00B8EF3D /* Music.storyboard in Resources */,
+				DE79539A1F2B845E00877761 /* 4.弟子规-雅坤.mp3 in Resources */,
 				DE03B81B1EFA633500B8EF3D /* Media.xcassets in Resources */,
-				3581D0601AB71392005BBD56 /* Main.storyboard in Resources */,
-				DE03B8181EFA5DA900B8EF3D /* 百家姓.mp3 in Resources */,
-				DE03B7D51EFA567E00B8EF3D /* CollectionViewCell.xib in Resources */,
+				DE7953991F2B845E00877761 /* 3.弟子规-雅坤.mp3 in Resources */,
 				3581D0621AB71392005BBD56 /* Images.xcassets in Resources */,
+				DE7953971F2B845E00877761 /* 1.弟子规-雅坤.mp3 in Resources */,
 				DE03B8111EFA5D1C00B8EF3D /* MusicList.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -616,14 +637,10 @@
 				DE03B7EE1EFA5AF700B8EF3D /* NSString+Additions.m in Sources */,
 				DE03B7F11EFA5AF700B8EF3D /* BaseEntity.m in Sources */,
 				DE03B80C1EFA5D1400B8EF3D /* MusicListViewController.m in Sources */,
-				DE03B7CF1EFA55E900B8EF3D /* QViewController.swift in Sources */,
 				DE03B8061EFA5CB800B8EF3D /* Track.m in Sources */,
-				DE03B7D01EFA55E900B8EF3D /* SViewController.swift in Sources */,
 				DE03B7F41EFA5AF700B8EF3D /* MusicHandler.m in Sources */,
 				DE03B7F01EFA5AF700B8EF3D /* MusicViewController.m in Sources */,
 				DE03B8011EFA5B7B00B8EF3D /* MusicIndicator.m in Sources */,
-				DE03B7D41EFA567E00B8EF3D /* CollectionViewCell.swift in Sources */,
-				DE03B7CE1EFA55E900B8EF3D /* CollectionViewController.swift in Sources */,
 				DE03B7EF1EFA5AF700B8EF3D /* UIView+Animations.m in Sources */,
 				DE03B7F21EFA5AF700B8EF3D /* MusicEntity.m in Sources */,
 				DE03B7F81EFA5B2A00B8EF3D /* GVUserDefaults+Properties.m in Sources */,
@@ -631,7 +648,6 @@
 				DE03B8121EFA5D1C00B8EF3D /* MusicListCell.m in Sources */,
 				3581D0591AB71391005BBD56 /* AppDelegate.swift in Sources */,
 				DE03B7F31EFA5AF700B8EF3D /* BaseHelper.m in Sources */,
-				DE03B7CD1EFA55E900B8EF3D /* BViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

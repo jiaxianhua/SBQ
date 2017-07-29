@@ -12,6 +12,7 @@
 #import "MusicIndicator.h"
 #import "MBProgressHUD.h"
 #import "NSString+Additions.h"
+#import "ReaderViewController.h"
 
 @interface MusicListViewController () <MusicViewControllerDelegate, MusicListCellDelegate>
 @property (nonatomic, strong) NSMutableArray *musicEntities;
@@ -31,12 +32,30 @@
 }
 
 - (IBAction)read:(UIBarButtonItem *)sender {
-    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    [self showPdf];
+}
+
+
+- (void)showPdf {
+    NSString *phrase = nil;
+    NSString *filePath;
     
-    UIViewController *viewController = [storyboard instantiateInitialViewController];
+    NSArray *pdfs = [[NSBundle mainBundle] pathsForResourcesOfType:@"pdf" inDirectory:nil];
     
-    viewController.title = @"三百千原文";
-    [self showViewController:viewController sender:nil];
+    filePath = [pdfs firstObject]; assert(filePath != nil); // Path to first PDF file
+    
+    ReaderDocument *document = [ReaderDocument withDocumentFilePath:filePath password:phrase];
+    
+    if (document != nil) // Must have a valid ReaderDocument object in order to proceed with things
+    {
+        ReaderViewController *readerViewController = [[ReaderViewController alloc] initWithReaderDocument:document];
+        
+        [self showViewController:readerViewController sender:nil];
+    }
+    else // Log an error so that we know that something went wrong
+    {
+        NSLog(@"%s [ReaderDocument withDocumentFilePath:'%@' password:'%@'] failed.", __FUNCTION__, filePath, phrase);
+    }
 }
 
 - (void)viewWillAppear:(BOOL)animated {

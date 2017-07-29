@@ -435,7 +435,7 @@ static void *kBufferingRatioKVOKey = &kBufferingRatioKVOKey;
     }
     
     MusicEntity *musicEntity = _musicEntities[_currentIndex];
-    NSString *name = musicEntity.fileName;
+    NSString *name = musicEntity.name;
     NSString *path = [NSString stringWithFormat:@"https://zh.wikipedia.org/wiki/%@", name];
     NSString *webPath = [path getURLEncodedString];
     if (webPath != nil) {

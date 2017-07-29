@@ -7,6 +7,7 @@ PODS:
   - MBProgressHUD (1.0.0)
   - NAKPlaybackIndicatorView (0.0.3)
   - PMParentalGate (1.0)
+  - vfrReader (2.8.6)
 
 DEPENDENCIES:
   - DOUAudioStreamer
@@ -15,6 +16,7 @@ DEPENDENCIES:
   - MBProgressHUD
   - NAKPlaybackIndicatorView
   - PMParentalGate
+  - vfrReader
 
 SPEC CHECKSUMS:
   DOUAudioStreamer: 14f217bab01b52171fc2bd7d96e1f8fdd50fce68
@@ -23,7 +25,8 @@ SPEC CHECKSUMS:
   MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
   NAKPlaybackIndicatorView: 794dd97576fe074bb1844c19ebcbf7509384a47f
   PMParentalGate: 9cf253ba14edcd9ff283677b70b1be9e56d7acef
+  vfrReader: 94ea739a545e39093c93802ca1c5b203a5df46b1
 
-PODFILE CHECKSUM: 8859a7a3c04a8f076c2f7633e7f1de3418a5a8ea
+PODFILE CHECKSUM: b3029017a86bc5530a1308fcf467d797773cb5d7
 
 COCOAPODS: 1.2.1

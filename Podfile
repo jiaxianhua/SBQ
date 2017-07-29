@@ -14,6 +14,7 @@ target 'SBQ' do
   #pod 'AFNetworking', '~> 2.0'
   pod 'NAKPlaybackIndicatorView'
   pod 'PMParentalGate'
+  pod 'vfrReader'
 
   target 'SBQTests' do
     inherit! :search_paths

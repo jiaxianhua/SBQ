@@ -95,6 +95,7 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/Mantle/Mantle.framework"
   install_framework "$BUILT_PRODUCTS_DIR/NAKPlaybackIndicatorView/NAKPlaybackIndicatorView.framework"
   install_framework "$BUILT_PRODUCTS_DIR/PMParentalGate/PMParentalGate.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/vfrReader/vfrReader.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/DOUAudioStreamer/DOUAudioStreamer.framework"
@@ -103,6 +104,7 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/Mantle/Mantle.framework"
   install_framework "$BUILT_PRODUCTS_DIR/NAKPlaybackIndicatorView/NAKPlaybackIndicatorView.framework"
   install_framework "$BUILT_PRODUCTS_DIR/PMParentalGate/PMParentalGate.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/vfrReader/vfrReader.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait
